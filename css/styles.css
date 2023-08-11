@@ -64,7 +64,8 @@ p {
 
 .flex-container {
   display: grid;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 1;
   justify-content: center;
   background-color: gray;
   background-size: cover;
@@ -72,23 +73,22 @@ p {
   background-position: center;
 }
 .flex-container div {
+  margin-top: 30px;
   margin: 10px;
   padding: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.flex-container .titulo {
-  text-align: center;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: azure;
+.flex-container .img {
+  margin-top: 100px;
+  margin: 2px;
 }
 .flex-container .parrafo {
   text-align: justify;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 60px;
 }
 .flex-container .imagen1 {
   display: grid;
@@ -97,6 +97,7 @@ p {
   margin: 100px;
   margin-left: 5 px;
   margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .flex-container .imagen2 {
   display: grid;
@@ -104,6 +105,7 @@ p {
   height: 350px;
   margin: 100px;
   margin-top: 0px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .title {
@@ -266,11 +268,11 @@ footer {
     margin: 0 auto;
     scroll-behavior: auto;
   }
-  .flex-container .imagen1 {
-    grid-template-columns: repeat(2, 1f);
-  }
-  .flex-container .imagen2 {
-    grid-template-columns: repeat(2, 1f);
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax 150px, 1fr);
+    width: 80%;
+    margin: 0 auto;
   }
   .flex-container1 {
     width: auto;
@@ -294,12 +296,6 @@ footer {
     margin-top: 100px;
     margin-bottom: 0px;
   }
-  .flex-container .imagen1 {
-    grid-template-columns: repeat(2, 1f);
-  }
-  .flex-container .imagen2 {
-    grid-template-columns: repeat(2, 1f);
-  }
   .flex-container1 {
     width: auto;
     grid-template-columns: repeat(2, 1f);
@@ -313,12 +309,6 @@ footer {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .flex-container .imagen1 {
-    grid-template-columns: repeat(2, 1f);
-  }
-  .flex-container .imagen2 {
-    grid-template-columns: repeat(2, 1f);
-  }
   .flex-container1 {
     width: auto;
     grid-template-columns: repeat(2, 1f);
@@ -330,12 +320,6 @@ footer {
     width: auto;
     max-width: auto;
     height: 900px;
-  }
-  .flex-container .imagen1 {
-    grid-template-columns: repeat(2, 1f);
-  }
-  .flex-container .imagen2 {
-    grid-template-columns: repeat(2, 1f);
   }
   .flex-container1 {
     width: auto;
@@ -354,12 +338,6 @@ footer {
     border: 10px solid black;
     margin: 0 auto;
     scroll-behavior: auto;
-  }
-  .flex-container .imagen1 {
-    grid-template-columns: repeat(2, 1f);
-  }
-  .flex-container .imagen2 {
-    grid-template-columns: repeat(2, 1f);
   }
   .flex-container1 {
     width: auto;
