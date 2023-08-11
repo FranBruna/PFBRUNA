@@ -25,7 +25,7 @@ html    {
 }
 
 picture img {
-    width: 100%;
+    width:100% ;
 }  
 h1 {
     font-family: "Mochiy_Pop_P_One";
@@ -123,7 +123,7 @@ body {
 }    
 
 footer {
-    margin-top: auto;
+    margin-top: 100%;
     margin-bottom: auto;
 }
 .flex-container1 {
@@ -151,7 +151,29 @@ footer {
    
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flex-home {
+        background-color:$backgroundcolor;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        
+    }
+    .gallery-container {
+        max-width: 500px;
+        width: auto;
+        height: 400px;
+        overflow-x: auto;
+        overflow-y: auto;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        border: 10px solid black;
+        margin: 0 auto;
+        scroll-behavior: auto;
+    }
+} 
+@media (min-width: 767px) {
     .flex-home {
         background-color:$backgroundcolor;
         background-size: cover;
@@ -161,7 +183,7 @@ footer {
         
     }
 }
-@media (min-width:768px) {
+@media (max-width:767px) {
     .video-responsive {
         width: 80%;
         height: auto;
@@ -170,7 +192,7 @@ footer {
         margin-bottom: 25px;
     }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .video-responsive {
         width: 80%;
         height: auto;
@@ -185,8 +207,7 @@ footer {
         width: auto;
         max-width:auto;
         height: 900px;
-
-      
+   
     }
 }
 @media (max-width:1024px) {
