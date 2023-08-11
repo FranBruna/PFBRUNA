@@ -148,58 +148,62 @@ footer {
 }
 .image-container {
     position: left;
- 
 }
 
-.servicios {
-    width: auto;
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2;
+    width: 80%;
+    margin: 0 auto;
+}
+.box1 {
+    width: 600px;
     height: auto;
+    margin: 15px;
+    text-align: center;
+    margin-left: 230px;
+    line-height: 150px;
+    grid-template-columns: 2;
     overflow: hidden;
     position: relative;
-    margin: auto;
 }
-.servicios img {
-    width: 1280px;
-    height: 1024px;
-}
-.servicios h1 {
+
+.p1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color:black;
     position:absolute;
-    top: 10%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0px 0 5px black;
-}
-.servicios h2 {
+    text-shadow: 0px 0 15px red;
+}     
+.p2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color:black;
     position:absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 0 5px black;
- }
- .servicios h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    position:absolute;
-    top: 30%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 0 5px black;
- }
- .servicios h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    position:absolute;
-    top: 60%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0px 0 5px black;
- }
-
-
+    text-shadow: 0px 0 15px red;
+}     
+.p3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    position:absolute;
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0 15px red;
+}   
+.p4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    position:absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0 15px red;
+}   
 @media (min-width: 768px) and (max-width: 1023px) {
     .flex-home {
         background-color:$backgroundcolor;
