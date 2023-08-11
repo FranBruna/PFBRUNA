@@ -38,7 +38,7 @@ p {
     color:white;
 }
 .flex-container {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     background-color: $backgroundcolor;
@@ -67,6 +67,7 @@ p {
         margin-bottom: 5px;
     }
     .imagen1 {
+        display: grid;
         width:400px ;
         height: 350px ;
         margin: 100px;
@@ -75,6 +76,7 @@ p {
         
     }
     .imagen2 {
+        display: grid;
         width: 400px;
         height: 350px;
         margin: 100px;
@@ -124,7 +126,7 @@ body {
 }    
 
 footer {
-    margin-top: 100%;
+    
     margin-bottom: auto;
 }
 .flex-container1 {
@@ -237,6 +239,12 @@ footer {
         margin: 0 auto;
         scroll-behavior: auto;
     }
+    .flex-container .imagen1{
+        grid-template-columns: repeat(2,1f);
+    }
+    .flex-container .imagen2 {
+        grid-template-columns: repeat(2,1f);
+    }
     .flex-container1 {
         width:auto;
         grid-template-columns: repeat(2,1f);
@@ -255,9 +263,15 @@ footer {
     .video-responsive {
         width: 80%;
         height: auto;
-        margin-left: 100px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+    .flex-container .imagen1{
+        grid-template-columns: repeat(2,1f);
+    }
+    .flex-container .imagen2 {
+        grid-template-columns: repeat(2,1f);
     }
     .flex-container1 {
         width:auto;
@@ -272,6 +286,12 @@ footer {
         margin-top: 25px;
         margin-bottom: 25px;
     }
+    .flex-container .imagen1{
+        grid-template-columns: repeat(2,1f);
+    }
+    .flex-container .imagen2 {
+        grid-template-columns: repeat(2,1f);
+    }
     .flex-container1 {
         width:auto;
         grid-template-columns: repeat(2,1f);
@@ -283,6 +303,12 @@ footer {
         width: auto;
         max-width:auto;
         height: 900px;
+    }
+    .flex-container .imagen1{
+        grid-template-columns: repeat(2,1f);
+    }
+    .flex-container .imagen2 {
+        grid-template-columns: repeat(2,1f);
     }
     .flex-container1 {
         width:auto;
@@ -302,6 +328,12 @@ footer {
         border: 10px solid black;
         margin: 0 auto;
         scroll-behavior: auto;
+    }
+    .flex-container .imagen1{
+        grid-template-columns: repeat(2,1f);
+    }
+    .flex-container .imagen2 {
+        grid-template-columns: repeat(2,1f);
     }
     .flex-container1 {
         width:auto;
